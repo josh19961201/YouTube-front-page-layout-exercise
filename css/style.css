@@ -1,0 +1,9 @@
+/* 設定html,body抓到瀏覽器高度 */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+}
