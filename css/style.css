@@ -11,18 +11,329 @@ body {
 
 /* header------- */
 #header {
+  position: relative;
   box-sizing: border-box;
-  width: 100%;
-  height: 56px;
-  padding: 0;
+}
+/* menu1 */
+#header .menu {
   position: fixed;
-  background: hsl(0, 0%, 13%);
-  border-bottom: 0.3px solid hsla(0, 0%, 93.3%, 0.1);
+  top: 0;
+  width: 100%;
+  padding: 0;
+  height: 56px;
+  background: hsla(0, 0%, 13%, 97%);
+  z-index: 4;
+}
+#header .menu ul {
+  position: relative;
+  font-size: 1.2rem;
+  font-weight: 100;
 }
 #header .menu ul li {
-  float: left;
+  position: absolute;
+  text-align: center;
+  line-height: 56px;
+}
+#header .menu ul li a {
+  color: white;
+  text-decoration: none;
 }
 #header .menu ul li:nth-child(1) {
+  left: 0;
+  width: 80px;
+}
+#header .menu ul li:nth-child(2) {
+  left: 80px;
+}
+#header .menu ul li:nth-child(3) {
+  display: inline-block;
+  left: 33%;
+  height: 40px;
+}
+#header .menu ul li:nth-child(3) input {
+  margin: 0;
+  background: hsl(0, 0%, 7%);
+  border: 0.3px solid hsl(0, 0%, 20%);
+  color: hsla(0, 0%, 93.3%, 0.5);
+  padding-left: 10px;
   height: 100%;
+  width: 572px;
+  font-size: 1em;
+}
+#header .menu ul li:nth-child(3) a:nth-child(2) {
+  color: hsla(0, 0%, 93.3%, 0.5);
+  background: hsl(0, 0%, 20%);
+  margin-left: -5px;
+  line-height: 40px;
+  padding: 5px 32px 7px;
+  border: none;
+  height: 40px;
+}
+#header .menu ul li:nth-child(3) a:nth-child(3) {
+  display: inline-block;
+  color: white;
+  background: hsl(0, 0%, 9%);
+  line-height: 40px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+#header .menu ul li:nth-child(4) {
+  right: 20px;
+  width: 144px;
+}
+#header .menu ul li:nth-child(4) a:nth-child(2) {
+  height: 34px;
+  border: 0.5px solid hsl(208, 100%, 62%);
+  color: hsl(208, 100%, 62%);
+  font-size: 1rem;
+  letter-spacing: 2px;
+  padding: 6px 12px;
+  margin-left: 20px;
+}
+
+/* menu2 */
+.menu2 {
+  position: fixed;
+  top: 56px;
+  right: 0;
+  width: 80%;
+  padding: 0;
+  height: 56px;
+  border-top: 0.3px solid hsla(0, 0%, 93.3%, 0.1);
+  border-bottom: 0.3px solid hsla(0, 0%, 93.3%, 0.1);
+  background: hsla(0, 0%, 13%, 97%);
+  z-index: 5;
+}
+.menu2 ul {
+  position: absolute;
+  display: block;
+  width: 80%;
+  top: 50%;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+}
+.menu2 ul li {
+  display: inline-block;
+}
+.menu2 ul li a {
+  text-decoration: none;
+  color: white;
+  border: 0.3px solid hsla(0, 0%, 93.3%, 0.1);
+  border-radius: 30px;
+  background: hsl(0, 0%, 22%);
+  padding: 2px 10px;
+  margin: auto 5px;
+}
+
+/* Sidebar----------------- */
+#sidebar {
+  position: fixed;
+  top: 56px;
+  left: 0;
+  width: 20%;
+  box-sizing: border-box;
+  background: hsl(0, 0%, 13%);
+  color: white;
+  height: 100%;
+  overflow: scroll;
+}
+/* menu3------------- */
+#sidebar .menu3 {
+  border-bottom: 0.3px solid hsla(0, 0%, 93.3%, 0.1);
+}
+#sidebar .menu3 ul li {
+  padding: 15px 30px;
+}
+#sidebar .menu3 ul li a {
+  color: white;
+  text-decoration: none;
+}
+/* menu4----------------- */
+#sidebar .menu4 {
+  border-bottom: 0.3px solid hsla(0, 0%, 93.3%, 0.1);
+}
+#sidebar .menu4 ul li {
+  padding: 15px 30px;
+}
+#sidebar .menu4 ul li a {
+  color: white;
+  text-decoration: none;
+}
+/* menu5--------------- */
+#sidebar .menu5 {
+  border-bottom: 0.3px solid hsla(0, 0%, 93.3%, 0.1);
+  height: 150px;
+}
+#sidebar .menu5 div {
+  line-height: 1.5;
+  padding: 15px 30px;
+  margin: 15px 8px;
+}
+#sidebar .menu5 a {
+  padding: 6px 15px;
+  text-decoration: none;
+  margin: 37px;
+  border: 0.5px solid hsl(208, 100%, 62%);
+  color: hsl(208, 100%, 62%);
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+/* menu6------------------- */
+.menu6 {
+  border-bottom: 0.3px solid hsla(0, 0%, 93.3%, 0.1);
+  height: 380px;
+}
+.menu6 h2 {
+  padding: 20px 25px;
+  display: block;
+  color: hsla(0, 0%, 93.3%, 0.5);
+}
+.menu6 ul li {
+  padding: 5px 20px;
+  width: 80%;
+}
+.menu6 ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+.menu6 ul li a img {
+  height: 24px;
   width: 24px;
+  border-radius: 50%;
+}
+/* menu7-------------------- */
+.menu7 {
+  border-bottom: 0.3px solid hsla(0, 0%, 93.3%, 0.1);
+  height: 60px;
+}
+.menu7 div {
+  padding: 22px 30px;
+}
+.menu7 div a {
+  color: white;
+  text-decoration: none;
+}
+/* menu8--------------- */
+.menu8 {
+  border-bottom: 0.3px solid hsla(0, 0%, 93.3%, 0.1);
+  height: 250px;
+}
+.menu8 h2 {
+  padding: 20px 25px;
+  display: block;
+  color: hsla(0, 0%, 93.3%, 0.5);
+}
+/* menu9--------------- */
+.menu9 {
+  border-bottom: 0.3px solid hsla(0, 0%, 93.3%, 0.1);
+}
+.menu9 ul li {
+  padding: 20px 30px;
+}
+.menu9 ul li a {
+  color: white;
+  text-decoration: none;
+}
+/* footer-------- */
+.footer {
+  height: 300px;
+}
+.footer ul {
+  margin: 5px;
+  padding: 20px 20px 5px;
+}
+.footer p {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 0.7rem;
+  color: hsl(0, 0%, 44%);
+}
+.footer ul li {
+  display: inline;
+}
+.footer ul li a {
+  text-decoration: none;
+  color: hsl(0, 0%, 75%);
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+}
+
+/* content-------------------------- */
+#content {
+  position: relative;
+  background: hsl(0, 0%, 9%);
+  top: 112px;
+  left: 20%;
+  height: 1000px;
+  width: 80%;
+}
+
+/* adBanner--------------------- */
+.adBanner {
+  background: white;
+  width: 100%;
+  height: 260px;
+  background-image: url(../picture/YouTube\ Premium\ Banner/0cf8b5de70b5f94a58cc47037e83bd028fe1e63fba98e0e68fafa923db6.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 180px center;
+}
+.adBanner img {
+  width: 320px;
+  height: 24px;
+  margin: 30px 60px 10px;
+}
+.adBanner p:nth-child(2) {
+  margin: 10px 60px 10px;
+  font-size: 2.3rem;
+  font-weight: 500;
+  line-height: 1.2;
+  width: 450px;
+}
+.adBanner a:nth-child(3) {
+  display: inline-block;
+  margin: 10px 60px 10px;
+  padding: 13px;
+  text-decoration: none;
+  border: 2px solid hsl(214, 94%, 43%);
+  color: hsl(214, 94%, 43%);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* containtMain------------- */
+.containtMain {
+  position: relative;
+  width: 100%;
+  height: 650px;
+}
+.containtMain .row {
+  position: relative;
+  width: 95%;
+  margin: auto;
+}
+.containtMain .row .col {
+  width: 25%;
+  height: 265px;
+  padding: 50px 10px;
+  position: relative;
+}
+.containtMain .row .col a img[src*="影片縮圖"] {
+  width: 250px;
+}
+.containtMain .row .col a img[src*="LOGO"] {
+  width: 36px;
+  margin-top: 10px;
+  border-radius: 50%;
+}
+.containtMain .row .col div {
+  position: absolute;
+  width: 70%;
+  left: 55px;
+  top: 200px;
+}
+.containtmain .row .col div a {
+  color: white;
 }

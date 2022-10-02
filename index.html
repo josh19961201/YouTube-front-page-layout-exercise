@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- 歸零 -->
+    <link rel="icon" href="./picture/YouTube.ico" type="image/x-icon" />
+    <!-- css歸零 -->
     <link rel="stylesheet" href="./css/reset.css" />
     <!-- Google Font -->
     <link
@@ -19,32 +20,235 @@
   </head>
   <body>
     <div id="header">
-      <div class="container">
-        <nav class="menu">
-          <ul>
-            <li>
-              <input type="button"><i class="fa-sharp fa-solid fa-bars"></i></input>
-            </li>
-            <li>
+      <nav class="menu">
+        <ul>
+          <li>
+            <a href=""><i class="fa-sharp fa-solid fa-bars"></i></a>
+          </li>
+          <li>
+            <a href="">
               <img src="./picture/YouTube＿LOGO.png" />
-            </li>
-            <li><input type="text" /></li>
-            <li>
-              <button>
-                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
-              </button>
-            </li>
-            <li>
-              <button><i class="fa-solid fa-microphone"></i></button>
-            </li>
-            <li>
-              <button><i class="fa-solid fa-ellipsis-vertical"></i></button>
-            </li>
-            <li>
-              <a href="#"> <i class="fa-solid fa-circle-user"></i> 登入 </a>
-            </li>
-          </ul>
-        </nav>
+            </a>
+          </li>
+          <li>
+            <input type="search" placeholder="搜尋" />
+            <a href=""
+              ><i id="search" class="fa-sharp fa-solid fa-magnifying-glass"></i
+            ></a>
+            <a href="">
+              <i class="fa-solid fa-microphone"></i>
+            </a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a>
+            <a href=""> <i class="fa-regular fa-circle-user"></i>登入 </a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="menu2">
+        <ul>
+          <li><a href="">全部</a></li>
+          <li><a href="">遊戲</a></li>
+          <li><a href="">音樂</a></li>
+          <li><a href="">直播中</a></li>
+          <li><a href="">動畫</a></li>
+          <li><a href="">旅遊勝地</a></li>
+          <li><a href="">烹飪</a></li>
+          <li><a href="">自然</a></li>
+          <li><a href="">最新上傳</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="sidebar">
+      <nav class="menu3">
+        <ul>
+          <li>
+            <a href=""><i class="fa-solid fa-house"></i>　　首頁</a>
+          </li>
+          <li>
+            <a href=""><i class="fa-regular fa-compass"></i>　　探索</a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-film"></i>　　Shorts</a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-clapperboard"></i>　　訂閱內容</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="menu4">
+        <ul>
+          <li>
+            <a href=""><i class="fa-solid fa-photo-film"></i>　　媒體庫</a>
+          </li>
+          <li>
+            <a href=""><i class="fa-regular fa-clock"></i>　　觀看紀錄</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="menu5">
+        <div>登入帳戶即可對影片表示喜歡、發布留言及訂閱頻道。</div>
+        <a href=""><i class="fa-regular fa-circle-user"></i>登入</a>
+      </nav>
+      <nav class="menu6">
+        <h2>探索</h2>
+        <ul>
+          <li>
+            <a href="">
+              <img src="./picture/側邊攔/探索/音樂.jpg" alt="" />　　音樂</a
+            >
+          </li>
+          <li></li>
+          <li>
+            <a href="">
+              <img src="./picture/側邊攔/探索/體育.jpg" alt="" />　　體育</a
+            >
+          </li>
+          <li></li>
+          <li>
+            <a href="">
+              <img src="./picture/側邊攔/探索/遊戲.jpg" alt="" />　　遊戲</a
+            >
+          </li>
+          <li></li>
+          <li>
+            <a href="">
+              <img src="./picture/側邊攔/探索/電影.jpg" alt="" />　　電影</a
+            >
+          </li>
+          <li></li>
+          <li>
+            <a href="">
+              <img src="./picture/側邊攔/探索/新聞.jpg" alt="" />　　新聞</a
+            >
+          </li>
+          <li></li>
+          <li>
+            <a href="">
+              <img src="./picture/側邊攔/探索/直播.jpg" alt="" />　　直播</a
+            >
+          </li>
+          <li></li>
+          <li>
+            <a href="">
+              <img
+                src="./picture/側邊攔/探索/360度影片.jpg"
+                alt=""
+              />　　360度影片</a
+            >
+          </li>
+          <li></li>
+        </ul>
+      </nav>
+      <nav class="menu7">
+        <div>
+          <a href=""><i class="fa-solid fa-circle-plus"></i>　　瀏覽頻道</a>
+        </div>
+      </nav>
+      <nav class="menu8">
+        <h2>更多YOUTUBE功能</h2>
+        <ul>
+          <li>
+            <a href="">
+              <img
+                src="./picture/側邊攔/更多youtube功能/YouTube Premium.png"
+                alt=""
+            /></a>
+          </li>
+          <li></li>
+          <li>
+            <a href="">
+              <img
+                src="./picture/側邊攔/更多youtube功能/YouTube Music.png"
+                alt=""
+            /></a>
+          </li>
+          <li></li>
+          <li>
+            <a href="">
+              <img
+                src="./picture/側邊攔/更多youtube功能/YouTube Kids.png"
+                alt=""
+            /></a>
+          </li>
+          <li></li>
+          <li>
+            <a href="">
+              <img src="./picture/側邊攔/更多youtube功能/YouTube TV.png" alt=""
+            /></a>
+          </li>
+          <li></li>
+        </ul>
+      </nav>
+      <nav class="menu9">
+        <ul>
+          <li>
+            <a href=""><i class="fa-solid fa-gear"></i>　　設定</a>
+          </li>
+          <li>
+            <a href=""><i class="fa-regular fa-flag"></i>　　檢舉紀錄</a>
+          </li>
+          <li>
+            <a href=""><i class="fa-regular fa-circle-question"></i>　　說明</a>
+          </li>
+          <li>
+            <a href=""
+              ><i class="fa-solid fa-circle-exclamation"></i>　　提供意見</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <nav class="footer">
+        <ul>
+          <li><a href="">簡介</a></li>
+          <li><a href="">媒體</a></li>
+          <li><a href="">版權</a></li>
+          <li><a href="">與我們聯絡</a></li>
+          <br />
+          <li><a href="">創作者</a></li>
+          <li><a href="">廣告</a></li>
+          <li><a href="">開發人員</a></li>
+        </ul>
+        <ul>
+          <li><a href="">條款</a></li>
+          <li><a href="">隱私權</a></li>
+          <li><a href="">政策安全性</a></li>
+          <br />
+          <li><a href="">YouTube運作方式</a></li>
+          <li><a href="">測試新功能</a></li>
+        </ul>
+        <p>&copy; 2022 Google LLC</p>
+      </nav>
+    </div>
+    <div id="content">
+      <div class="adBanner">
+        <img
+          src="./picture/YouTube Premium Banner/YouTube Premium.png"
+          alt=""
+        />
+        <p>盡情觀看所有喜愛影片，零廣告</p>
+        <a href="">立即訂閱</a>
+      </div>
+      <div class="containtMain">
+        <div class="row">
+          <div class="col">
+            <a href="">
+              <img src="./picture/影片縮圖/001.webp" alt="" />
+            </a>
+            <a href="">
+              <img src="./picture/頻道LOGO/中天電視_LOGO.jpg" alt="" />
+            </a>
+            <div>
+              <a href=""
+                >【中天直播#LIVE】論文抄襲還沒完! 余正煌正式提告林智堅...
+              </a>
+              <br />
+              <a href="">觀看次數：9638次</a>
+              <br />
+              <a href="">直播時間：18分鐘前</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
