@@ -8,6 +8,10 @@ body {
   font-family: "Noto Sans TC", sans-serif;
   background: hsl(0, 0%, 13%);
 }
+hr {
+  width: 95%;
+  border: 2px solid hsl(0, 0%, 20%);
+}
 
 /* header------- */
 #header {
@@ -312,28 +316,49 @@ body {
 .containtMain .row {
   position: relative;
   width: 95%;
-  margin: auto;
+  margin: 50px auto 0;
 }
 .containtMain .row .col {
-  width: 25%;
+  width: 23%;
   height: 265px;
-  padding: 50px 10px;
-  position: relative;
+  margin: 0 5px;
+  display: inline-block;
 }
 .containtMain .row .col a img[src*="影片縮圖"] {
   width: 250px;
 }
 .containtMain .row .col a img[src*="LOGO"] {
+  float: left;
   width: 36px;
   margin-top: 10px;
   border-radius: 50%;
 }
-.containtMain .row .col div {
+.containtMain .row .col a img[src*="直播"] {
   position: absolute;
-  width: 70%;
-  left: 55px;
-  top: 200px;
+  top: 236px;
+  left: 52px;
 }
-.containtmain .row .col div a {
+.containtMain .row .col .videoTitle {
+  position: relative;
+  width: 70%;
+  margin: 10px 45px;
+
+  /* left: 55px;
+  top: 200px; */
+}
+.containtMain .row .col .videoInfo {
+  color: hsl(0, 0%, 44%);
+  margin-left: 46px;
+}
+.containtMain .row .col .videoTitle a {
   color: white;
+  text-decoration: none;
+  font-size: 0.8rem;
+  line-height: 1.2;
+}
+.containtMain .row .col .videoInfo a {
+  color: hsl(0, 0%, 44%);
+  text-decoration: none;
+  font-size: 0.8rem;
+  line-height: 1.2;
 }
